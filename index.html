@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #D70D88 !important;
+        }
+        .btn-custom {
+            background-color: #D70D88 !important;
+            color: white !important;
+            border: none !important;
+        }
+        .btn-custom:hover {
+            background-color: #b50b6d !important;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center vh-100">
+    <div class="container p-4 bg-white rounded shadow" id="form-container" style="max-width: 400px;">
+        <div class="text-center mb-3">
+            <img src="https://github.com/user-attachments/assets/7683d51b-267d-49da-bc43-ff4bae5bbd00" alt="logo" class="img-fluid" style="max-width: 200px;">
+        </div>
+        <h2 class="text-center text-primary" style="color: rgb(0, 0, 0) !important;">Formulário</h2>
+        <form id="cadastro-form">
+            <div class="mb-3">
+                <label for="nome" class="form-label text-primary" style="color: #000000 !important;">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control border-primary" style="border-color: #000000 !important;" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-primary" style="color: #000000 !important;">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control border-primary" style="border-color: #000000 !important;" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label text-primary" style="color: #000000 !important;">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" class="form-control border-primary" style="border-color: #000000 !important;" required>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Enviar</button>
+        </form>
+    </div>
+    <div class="container p-4 bg-white rounded shadow text-center d-none" id="mensagem" style="max-width: 400px;">
+        <h2 style="color: #000000 !important;">Obrigado por seu cadastro!</h2>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
